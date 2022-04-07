@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --lightGray: hsl(212, 45%, 89%);
+  --grayishBlue: hsl(220, 15%, 55%);
+  --white: hsl(0, 0%, 100%);
+  --card-radius: 10px;
+}
+
+body {
+  background-color: var(--lightGray);
+  font-size: 15px;
+  font-family: 'Outfit';
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 30px;
+}
+
+.qr-card {
+  width: 350px;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--card-radius);
+}
+
+.qr-body {
+  text-align: center;
+  padding: 0 30px;
+}
+
+.qr-img {
+  width: 100%;
+  border-radius: var(--card-radius);
+}
+
+.grayish-blue-text {
+  color: var(--grayishBlue);
+}
 
 .attribution {
   position: fixed;
@@ -11,4 +52,10 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 760px) {
+  .qr-body {
+    padding: 0 10px;
+  }
 }
